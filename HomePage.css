@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+body{
+    height: 310vh;
+    background-color: #141414;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    background: linear-gradient(to top,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    background-color: transparent;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    padding: 0 2%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+    z-index: 1;
+}
+.sticky{
+    background-color: #141414;
+}
+nav .logo img{
+    width: 20%;
+    transition: .2s;
+}
+nav .logo img:hover{
+    transform: scale(1.05)
+}
+nav .user{
+    width: 2%;
+    align-items: center;
+}
+nav .user #user{
+    width: 100%;
+    border-radius: 10px;
+    transition: .2s;
+}
+nav .user #user:hover{
+    transform: scale(1.05)
+}
+nav .menu-bar{
+    margin-left: -25%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav .menu-bar ul li a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: .05s ease;
+}
+nav .menu-bar ul li a:hover{
+    border-bottom: 2px solid red;
+}
+nav ul li{
+    list-style: none;
+}
+nav .icon-bar{
+    width: 4%;
+    margin-left: 61.5%;
+    margin-right: 1%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+nav .icon-bar .icon-1 i{
+    color: rgb(255, 255, 255);
+    margin-right: 15%;
+    font-size: larger;
+    transition: .1s ease-out;
+}
+nav .icon-bar .icon-2 i{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+nav .icon-bar i:hover{
+    border-bottom: 2px solid red;
+}
+header .container .featured-content{
+    background: url(Img/Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    transition: .3s ease;
+}
+header .container .content-info{
+    background: linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 2.5%;
+    color: aliceblue;
+}
+header .container .content-info .age span{
+    background-color:  #14141457;
+    padding: .3% 2.5%;
+    text-align: center;
+    font-weight: 400;
+    margin-left: 92.9%;
+    font-size: x-large;
+    border-left: 4px solid white;
+    cursor: default;
+    user-select: none;
+}
+header .container .text-info {
+    width: 40%;
+    margin: 3% 0 3% 0;
+}
+header .container .text-info h1{
+    margin-bottom: 3%;
+}
+header .container .text-info span{
+    font-size: large;
+    font-weight: light;
+}
+header .container .featured-button .Play-btn{
+    background-color: white;
+    color: black;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 45px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .5s;
+    font-size: large;
+}
+header .container .featured-button .Play-btn:hover{
+    background-color: rgba(239, 239, 239, 0.7);
+}
+header .container .featured-button .Info-btn{
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 35px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .5s;
+    font-size: large;
+    margin-left: 1%;
+}
+header .container .featured-button .Info-btn:hover{
+    background-color: #14141457;
+}
+header .container .featured-content .period{
+    margin-top: -8%;
+    height: 16%;
+    width: 100%;
+    background: linear-gradient(to bottom,#14141400, #1414148b, #141414);
+    position: relative;
+}
+header .container .featured-content .period .period-header{
+    margin-left: 2.6%;
+    margin-bottom: 1%;
+    font-size: larger;
+    font-weight: bold;
+}
+header .container .featured-content .period .period-header a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.614);
+    transition: .3s ease;
+}
+header .container .featured-content .period .period-header a:hover{
+    color: rgb(255, 255, 255);
+}
+header .container .featured-content .period .period-item{
+    margin-left: 2.6%;
+    overflow: hidden;
+    height: auto;
+}
+header .container .featured-content .period .period-item ul{
+    display: flex;
+    align-items: center;
+    column-gap: .7%;
+    list-style: none;
+    transform: translateX(0);
+    transition: 1.5s ease;
+}
+header .container .featured-content .period .period-item ul img{
+    border-radius: 3%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+header .container .featured-content .period .period-item ul img:hover{
+    transform: translateY(-2.5%);
+}
+header .container .featured-content .period .button{
+    color: white;
+}
+header .container .featured-content .period .button i{
+    position: absolute;
+    right: 0%;
+    bottom: -55%;
+    font-size: 50px;
+    opacity: 0;
+    transition: .3s ease;
+    cursor: pointer;
+    padding: 4% 0.5%;
+}
+header .container .featured-content .period .button i:hover{
+    opacity: 1;
+    background: linear-gradient(to right,#14141400, #1414148b, #14141475);
+}
+section{
+    margin-top: 8%;
+}
+section .period{
+    height: 16%;
+    width: 100%;
+    margin-top: 3%;
+    position: relative;
+}
+section .period .period-header{
+    margin-left: 2.6%;
+    margin-bottom: 1%;
+    font-size: larger;
+    font-weight: bold;
+}
+section .period .period-header a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.614);
+    transition: .3s ease;
+}
+section .period .period-header a:hover{
+    color: rgb(255, 255, 255);
+}
+section .period .period-item{
+    margin-left: 2.6%;
+    overflow: hidden;
+    height: auto;
+}
+section .period .period-item ul{
+    display: flex;
+    align-items: center;
+    column-gap: .7%;
+    list-style: none;
+    transform: translateX(0);
+    transition: 1.5s ease;
+}
+section .period .period-item ul img{
+    border-radius: 3%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+section .period .period-item ul img:hover{
+    transform: translateY(-2.5%);
+}
+section .period .button{
+    color: white;
+}
+section .period .button i{
+    position: absolute;
+    right: 0%;
+    bottom: -1%;
+    font-size: 50px;
+    opacity: 0;
+    transition: .3s ease;
+    cursor: pointer;
+    padding: 4% 0.5%;
+}
+section .period .button i:hover{
+    opacity: 1;
+    background: linear-gradient(to right,#14141400, #1414148b, #14141475);
+}
+section .period-5{
+    height: 16%;
+    width: 100%;
+    margin-top: 3%;
+    position: relative;
+}
+section .period-5 .period-header{
+    margin-left: 2.6%;
+    margin-bottom: 1%;
+    font-size: larger;
+    font-weight: bold;
+}
+section .period-5 .period-header a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.614);
+    transition: .3s ease;
+}
+section .period-5 .period-header a:hover{
+    color: rgb(255, 255, 255);
+}
+section .period-5 .period-item{
+    margin-left: 2.6%;
+    overflow: hidden;
+    height: auto;
+}
+section .period-5 .period-item ul{
+    display: flex;
+    align-items: center;
+    column-gap: .7%;
+    list-style: none;
+    transform: translateX(0);
+    transition: 1.5s ease;
+}
+section .period-5 .period-item ul li{
+    padding-bottom: .5%;
+}
+section .period-5 .period-item ul li .progress{
+    padding: 2% 20% 0;
+    align-items: center;
+}
+section .period-5 .period-item ul li .progress .progress-bar{
+    background-color: hsla(0,0%,100%, 0.4);
+    display: block;
+    height: 3px;
+    position: relative;
+}
+section .period-5 .period-item ul li .progress .progress-bar .progress-completed{
+    width: 9%;
+    background-color: #e50914;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+section .period-5 .period-item ul img{
+    border-radius: 3%;
+    padding-bottom: .5%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+section .period-5 .period-item ul img:hover{
+    transform: translateY(-2.5%);
+}
+section .period-5 .button{
+    color: white;
+}
+section .period-5 .button i{
+    position: absolute;
+    right: 0%;
+    bottom: 6.6%;
+    font-size: 50px;
+    opacity: 0;
+    transition: .3s ease;
+    cursor: pointer;
+    padding: 4% 0.5%;
+}
+section .period-5 .button i:hover{
+    opacity: 1;
+    background: linear-gradient(to right,#14141400, #1414148b, #14141475);
+}
+footer{
+    background-color: rgb(11, 10, 10);
+    width: 100%;
+    height: 30vh;
+    margin-top: 10%;
+    text-align: center;
+    align-items: center;
+}
+footer .cizgi{
+    width: 100%;
+    height: 1vh;
+    background-color: rgba(167, 2, 2, 0.872);
+    margin-bottom: 2%;
+}
+footer .menu-wrapper .menu-container{
+    font-size: 18px;
+    font-weight: bold;
+}
+footer .menu-wrapper .menu-container .menu-list{
+    list-style: none;
+}
+footer .menu-wrapper .menu-container .menu-list li{
+    display: inline-block;
+    margin-left: 1.5%;
+}
+footer .menu-wrapper .menu-container .menu-list a{
+    text-decoration: none;
+    color: aliceblue;
+    opacity: .5;
+    transition: .05s;
+}
+footer .menu-wrapper .menu-container .menu-list a:hover{
+    opacity: 1;
+    border-bottom: 2px solid red;
+}
+footer .footer-img a img{
+    width: 15%;
+    margin-top: 2%;
+    transition: .3s;
+}
+footer .footer-img a img:hover{
+    transform: scale(1.05);
+}
+footer .privacy a{
+    width: 100%;
+    height: auto;
+    color: aliceblue;
+    text-decoration: none;
+    opacity: .6;
+    transition: .4s;
+}
+footer .privacy a:hover{
+    opacity: 1;
+}
